@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func printStar(n int) {
+	//in for loop there is no 
 	for i := 0; i < n; i++ {
 		for j := 0; j <= i; j++ {
 			fmt.Printf("*")
