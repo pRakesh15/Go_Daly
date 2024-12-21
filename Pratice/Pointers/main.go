@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strconv"
+	// "strconv"
 )
 
 //As we know pointer is also a variable but it not store value
