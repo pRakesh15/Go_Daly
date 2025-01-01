@@ -14,7 +14,7 @@ import (
 // ContainsAny
 // ContainsFunc
 // ContainsRune
-// Count
+// Count  *****************************
 // Cut
 // CutPrefix
 // CutSuffix
@@ -93,6 +93,7 @@ func main() {
 	fmt.Println(strings.Contains(str4, "name")) //true
 
 	//func Count ¶
-	fmt.Println(strings.Count(str4, "e"))
+	str5 := "Rakesh Pradhan"
+	fmt.Println(strings.Count(str5, "a"))
 
 }
