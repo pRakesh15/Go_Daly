@@ -93,7 +93,39 @@ func main() {
 	fmt.Println(strings.Contains(str4, "name")) //true
 
 	//func Count ¶
-	str5 := "Rakesh Pradhan"
+	str5 := "Mr Rakesh Pradhan"
 	fmt.Println(strings.Count(str5, "a"))
+
+	//Cut
+	//this function return 3 parameters before cut string after cut string and the string or the
+	//part we will provide it is present or not AND it sacesensitve
+	beforeCut, afterCut, found := strings.Cut(str5, "Rakesh")
+
+	fmt.Println("after cut function", afterCut)
+	fmt.Println("before cut function", beforeCut)
+	fmt.Println("available", found)
+
+	//func CutPrefix and CutSuffix  are same like cut
+
+	suffix, found1 := strings.CutSuffix(str1, "sh")
+
+	fmt.Println("before cut function", suffix)
+	fmt.Println("available", found1)
+
+	prefix, found2 := strings.CutPrefix(str1, "Ra")
+
+	fmt.Println("after cut function", prefix)
+	fmt.Println("available", found2)
+
+	//func Fields
+	//it convert a string into a array in basis of one or more white space
+	filds := strings.Fields(str5)
+
+	fmt.Printf("type of fields is %T", str5)
+	fmt.Printf("type of fields is %T", filds)
+
+	//  INDEX
+
+	fmt.Println(strings.Index("chicken", "ick"))
 
 }
